@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#70452f" name="theme-color"/>
+  <title>
+   Basket | mochimoo
+  </title>
+  <link href="design.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="header">
+   <a aria-label="Mochimoo Home" class="brand" href="index.html">
+    <img alt="mochimoo logo" src="images/logo.png"/>
+    <span class="cute-font">
+     mochimoo
+    </span>
+   </a>
+   <div class="header-icons">
+    <a aria-label="Mooer profile" class="profile-link" href="profile.html">
+     <img alt="Profile" src="images/profile.png"/>
+    </a>
+    <a aria-label="Open basket" class="basket-link" href="basket.html">
+     <img alt="Basket" src="images/basket.png"/>
+     <span class="cart-count" data-cart-count="">
+      0
+     </span>
+    </a>
+   </div>
+  </header>
+  <nav class="navbar">
+   <a href="index.html">
+    Home
+   </a>
+   <a href="about.html">
+    About Us
+   </a>
+   <div class="dropdown">
+    <a class="dropbtn" href="products.html">
+     Products &dtrif;
+    </a>
+    <div class="dropdown-content">
+     <a href="products.html#cheesticks">
+      Cheesticks
+     </a>
+     <a href="products.html#dubai-chewy">
+      Dubai Chewy
+     </a>
+     <a href="products.html#risoles">
+      Risoles
+     </a>
+     <a href="products.html#desserts">
+      Desserts
+     </a>
+    </div>
+   </div>
+   <a href="description.html">
+    Description
+   </a>
+   <a href="service.html">
+    Service
+   </a>
+  </nav>
+  <section class="products-header">
+   <img alt="" class="bread" src="images/bread.png"/>
+   <span class="eyebrow">
+    Your picks, all in one place
+   </span>
+   <h1 class="cute-font">
+    Your shopping basket
+   </h1>
+   <p>
+    Check your items and details before sending your order to mochimoo on WhatsApp.
+   </p>
+  </section>
+  <section class="basket-section">
+   <div class="basket-card">
+    <h1 class="cute-font">
+     Your treats
+    </h1>
+    <p class="basket-note">
+     Change quantities or remove items before checkout.
+    </p>
+    <div class="basket-items" id="basket-items">
+    </div>
+    <div class="basket-total">
+     <span>
+      Total
+     </span>
+     <span id="basket-total">
+      Rp 0
+     </span>
+    </div>
+    <form class="checkout-form" id="checkout-form">
+     <div>
+      <label for="customer-name">
+       Your name *
+      </label>
+      <input id="customer-name" name="name" placeholder="Name" required=""/>
+     </div>
+     <div>
+      <label for="customer-phone">
+       Phone number
+      </label>
+      <input id="customer-phone" name="phone" placeholder="WhatsApp number"/>
+     </div>
+     <div class="full">
+      <label for="customer-address">
+       Delivery address *
+      </label>
+      <textarea id="customer-address" name="address" placeholder="Your complete address" required=""></textarea>
+     </div>
+     <div>
+      <label for="delivery-method">
+       Delivery method
+      </label>
+      <select id="delivery-method" name="delivery">
+       <option>
+        Discuss via WhatsApp
+       </option>
+       <option>
+        Pickup
+       </option>
+       <option>
+        Delivery
+       </option>
+      </select>
+     </div>
+     <div>
+      <label for="payment-method">
+       Payment preference
+      </label>
+      <select id="payment-method" name="payment">
+       <option>
+        Discuss via WhatsApp
+       </option>
+       <option>
+        QRIS
+       </option>
+       <option>
+        Bank transfer
+       </option>
+      </select>
+     </div>
+     <div class="full">
+      <label for="order-notes">
+       Notes
+      </label>
+      <textarea id="order-notes" name="notes" placeholder="Any packing requests or other notes"></textarea>
+     </div>
+     <div class="full">
+      <button class="submit-order-btn" style="width:100%" type="submit">
+       Checkout via WhatsApp &nearrow;
+      </button>
+      <p class="muted" style="margin-top:10px">
+       Your order is not confirmed until you send the WhatsApp message and receive a reply from us.
+      </p>
+     </div>
+    </form>
+   </div>
+   <aside class="price-recap">
+    <h2 class="cute-font">
+     Menu prices
+    </h2>
+    <p class="muted">
+     Quick reference for available items.
+    </p>
+    <table class="price-table">
+     <tr class="price-group">
+      <th colspan="2">
+       Cheesticks
+      </th>
+     </tr>
+     <tr>
+      <td>
+       Regular
+      </td>
+      <td>
+       Rp 75.000
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Tester
+      </td>
+      <td>
+       Rp 25.000
+      </td>
+     </tr>
+     <tr>
+      <td>
+       With Nutella
+      </td>
+      <td>
+       Rp 125.000
+      </td>
+     </tr>
+     <tr class="price-group">
+      <th colspan="2">
+       Dubai Chewy
+      </th>
+     </tr>
+     <tr>
+      <td>
+       Mini Bites
+      </td>
+      <td>
+       Rp 20.000
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Original
+      </td>
+      <td>
+       Rp 37.000
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Jumbo
+      </td>
+      <td>
+       Rp 50.000
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Double Pack
+      </td>
+      <td>
+       Rp 70.000
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Megalodon
+      </td>
+      <td>
+       Rp 75.000
+      </td>
+     </tr>
+     <tr class="price-group">
+      <th colspan="2">
+       Risoles
+      </th>
+     </tr>
+     <tr>
+      <td>
+       Chocolate / Mozzarella
+      </td>
+      <td>
+       Rp 30.000
+      </td>
+     </tr>
+    </table>
+    <a class="btn secondary" href="products.html" style="width:100%;margin-top:18px">
+     Continue shopping
+    </a>
+   </aside>
+  </section>
+  <footer class="site-footer">
+   <div class="footer-main">
+    <div>
+     <div class="footer-brand">
+      <img alt="" src="images/logo.png"/>
+      <span class="cute-font">
+       mochimoo
+      </span>
+     </div>
+     <p>
+      Little treats, lots of love. Homemade favorites for your sweet and savory cravings since 2021.
+     </p>
+     <p style="margin-top:12px">
+      Bandung, West Java
+     </p>
+    </div>
+    <div>
+     <h3>
+      EXPLORE
+     </h3>
+     <div class="footer-links">
+      <a href="index.html">
+       Home
+      </a>
+      <a href="about.html">
+       Our Story
+      </a>
+      <a href="products.html">
+       All Products
+      </a>
+      <a href="description.html">
+       Product Guide
+      </a>
+      <a href="service.html">
+       How to Order
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      SHOP BY CATEGORY
+     </h3>
+     <div class="footer-links">
+      <a href="products.html#dubai-chewy">
+       Dubai Chewy
+      </a>
+      <a href="products.html#cheesticks">
+       Cheesticks
+      </a>
+      <a href="products.html#risoles">
+       Risoles
+      </a>
+      <a href="basket.html">
+       Your Basket
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      LET'S TALK
+     </h3>
+     <div class="footer-links">
+      <a href="https://wa.me/628989900049" rel="noopener" target="_blank">
+       WhatsApp: 0898-9900-049
+      </a>
+      <a href="about.html#find-us">
+       Find Our Location
+      </a>
+      <a href="service.html">
+       Order &amp; Payment Info
+      </a>
+     </div>
+     <p style="margin-top:12px">
+      Questions? We are happy to help you choose.
+     </p>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>
+     &copy; 2026 mochimoo. Made with care in Bandung.
+    </p>
+    <p>
+     Sweet bites. Happy mooers.
+    </p>
+   </div>
+  </footer>
+  <div class="toast" id="toast" role="status">
+  </div>
+  <script src="site.js">
+  </script>
+ </body>
+</html>

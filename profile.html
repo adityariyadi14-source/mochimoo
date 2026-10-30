@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#63483b" name="theme-color"/>
+  <title>
+   Mooer Profile | mochimoo
+  </title>
+  <link href="design.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="header">
+   <a aria-label="Mochimoo Home" class="brand" href="index.html">
+    <img alt="Mochimoo logo" src="images/logo.png"/>
+    <span class="cute-font">
+     mochimoo
+    </span>
+   </a>
+   <div class="header-icons">
+    <a aria-label="Mooer profile" class="profile-link" href="profile.html">
+     <img alt="Profile" src="images/profile.png"/>
+    </a>
+    <a aria-label="Open basket" class="basket-link" href="basket.html">
+     <img alt="Basket" src="images/basket.png"/>
+     <span class="cart-count" data-cart-count="">
+      0
+     </span>
+    </a>
+   </div>
+  </header>
+  <nav class="navbar">
+   <a href="index.html">
+    Home
+   </a>
+   <a href="about.html">
+    About Us
+   </a>
+   <div class="dropdown">
+    <a class="dropbtn" href="products.html">
+     Products &dtrif;
+    </a>
+    <div class="dropdown-content">
+     <a href="products.html#cheesticks">
+      Cheesticks
+     </a>
+     <a href="products.html#dubai-chewy">
+      Dubai Chewy
+     </a>
+     <a href="products.html#risoles">
+      Risoles
+     </a>
+    </div>
+   </div>
+   <a href="description.html">
+    Description
+   </a>
+   <a href="service.html">
+    Service
+   </a>
+  </nav>
+  <main class="profile-page">
+   <div class="profile-intro">
+    <span class="eyebrow">
+     YOUR LITTLE MOOMER SPACE
+    </span>
+    <h1 class="cute-font">
+     Hello, mooer!
+    </h1>
+    <p>
+     Save your details here so checkout feels quicker next time.
+    </p>
+   </div>
+   <div class="profile-layout">
+    <section class="profile-welcome">
+     <img alt="Mooer profile avatar" class="profile-avatar" src="images/profile.png"/>
+     <h2 id="profile-greeting">
+      Your mooer profile
+     </h2>
+     <p>
+      Your details stay in this browser on this device. This is a simple local profile, not an account login.
+     </p>
+     <p style="margin-top:18px">
+      <a class="btn secondary" href="products.html">
+       Browse treats
+      </a>
+     </p>
+    </section>
+    <section class="profile-form-card">
+     <h2>
+      My details
+     </h2>
+     <p>
+      Fill in your delivery details. You can edit them any time.
+     </p>
+     <form class="profile-form" id="profile-form">
+      <label>
+       Full name
+       <input autocomplete="name" name="name" placeholder="Your name" required=""/>
+      </label>
+      <label>
+       WhatsApp number
+       <input autocomplete="tel" name="phone" placeholder="08xxxxxxxxxx" type="tel"/>
+      </label>
+      <label class="full">
+       Delivery address
+       <textarea autocomplete="street-address" name="address" placeholder="Street, housing complex, block, city" rows="3"></textarea>
+      </label>
+      <label>
+       Preferred delivery
+       <select name="delivery">
+        <option value="">
+         Choose one
+        </option>
+        <option>
+         Pickup
+        </option>
+        <option>
+         Delivery
+        </option>
+       </select>
+      </label>
+      <label>
+       Favorite category
+       <select name="favorite">
+        <option value="">
+         Choose one
+        </option>
+        <option>
+         Dubai Chewy
+        </option>
+        <option>
+         Cheesticks
+        </option>
+        <option>
+         Risoles
+        </option>
+        <option>
+         Desserts
+        </option>
+       </select>
+      </label>
+      <label class="full">
+       Notes for future orders
+       <textarea name="notes" placeholder="Optional notes" rows="2"></textarea>
+      </label>
+     </form>
+     <div class="profile-actions">
+      <button class="btn" id="save-profile" type="button">
+       Save profile
+      </button>
+      <button class="btn secondary" id="clear-profile" type="button">
+       Clear details
+      </button>
+     </div>
+     <p class="profile-status" id="profile-status" role="status">
+     </p>
+    </section>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-main">
+    <div>
+     <div class="footer-brand">
+      <img alt="" src="images/logo.png"/>
+      <span class="cute-font">
+       mochimoo
+      </span>
+     </div>
+     <p>
+      Little treats, lots of love. Homemade favorites for your sweet and savory cravings since 2021.
+     </p>
+     <p style="margin-top:12px">
+      Bandung, West Java
+     </p>
+    </div>
+    <div>
+     <h3>
+      EXPLORE
+     </h3>
+     <div class="footer-links">
+      <a href="index.html">
+       Home
+      </a>
+      <a href="about.html">
+       Our Story
+      </a>
+      <a href="products.html">
+       All Products
+      </a>
+      <a href="description.html">
+       Product Guide
+      </a>
+      <a href="service.html">
+       How to Order
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      SHOP BY CATEGORY
+     </h3>
+     <div class="footer-links">
+      <a href="products.html#dubai-chewy">
+       Dubai Chewy
+      </a>
+      <a href="products.html#cheesticks">
+       Cheesticks
+      </a>
+      <a href="products.html#risoles">
+       Risoles
+      </a>
+      <a href="basket.html">
+       Your Basket
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      LET'S TALK
+     </h3>
+     <div class="footer-links">
+      <a href="https://wa.me/628989900049" rel="noopener" target="_blank">
+       WhatsApp: 0898-9900-049
+      </a>
+      <a href="about.html#find-us">
+       Find Our Location
+      </a>
+      <a href="service.html">
+       Order &amp; Payment Info
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>
+     &copy; 2026 mochimoo. Made with care in Bandung.
+    </p>
+    <p>
+     Sweet bites. Happy mooers.
+    </p>
+   </div>
+  </footer>
+  <div class="toast" id="toast" role="status">
+  </div>
+  <script src="site.js">
+  </script>
+  <script>
+   (()=>{const key='mochimoo_profile_v1',form=document.getElementById('profile-form'),status=document.getElementById('profile-status'),greeting=document.getElementById('profile-greeting');function load(){let d={};try{d=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){};Object.keys(d).forEach(k=>{if(form.elements[k])form.elements[k].value=d[k]});greeting.textContent=d.name?`Hi, ${d.name}!`:'Your mooer profile'}function save(){const d={};new FormData(form).forEach((v,k)=>d[k]=String(v).trim());localStorage.setItem(key,JSON.stringify(d));greeting.textContent=d.name?`Hi, ${d.name}!`:'Your mooer profile';status.textContent='Profile saved on this device.'}document.getElementById('save-profile').addEventListener('click',()=>{if(!form.reportValidity())return;save()});document.getElementById('clear-profile').addEventListener('click',()=>{localStorage.removeItem(key);form.reset();greeting.textContent='Your mooer profile';status.textContent='Saved details cleared from this browser.'});load()})();
+  </script>
+ </body>
+</html>

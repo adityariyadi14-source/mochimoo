@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#63483b" name="theme-color"/>
+  <title>
+   Wishlist | mochimoo
+  </title>
+  <link href="design.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="header">
+   <a aria-label="Mochimoo Home" class="brand" href="index.html">
+    <img alt="Mochimoo logo" src="images/logo.png"/>
+    <span class="cute-font">
+     mochimoo
+    </span>
+   </a>
+   <div class="header-icons">
+    <a aria-label="Mooer profile" class="profile-link" href="profile.html">
+     <img alt="Profile" src="images/profile.png"/>
+    </a>
+    <a aria-label="Open basket" class="basket-link" href="basket.html">
+     <img alt="Basket" src="images/basket.png"/>
+     <span class="cart-count" data-cart-count="">
+      0
+     </span>
+    </a>
+   </div>
+  </header>
+  <nav class="navbar">
+   <a href="index.html">
+    Home
+   </a>
+   <a href="about.html">
+    About Us
+   </a>
+   <div class="dropdown">
+    <a class="dropbtn" href="products.html">
+     Products &dtrif;
+    </a>
+    <div class="dropdown-content">
+     <a href="products.html#cheesticks">
+      Cheesticks
+     </a>
+     <a href="products.html#dubai-chewy">
+      Dubai Chewy
+     </a>
+     <a href="products.html#risoles">
+      Risoles
+     </a>
+     <a href="products.html#desserts">
+      Desserts
+     </a>
+    </div>
+   </div>
+   <a href="description.html">
+    Description
+   </a>
+   <a href="service.html">
+    Service
+   </a>
+  </nav>
+  <main class="wishlist-page">
+   <div class="products-header">
+    <span class="eyebrow">
+     Saved for your next treat
+    </span>
+    <h1 class="cute-font">
+     Your wishlist
+    </h1>
+    <p>
+     Keep your favourite Mochimoo treats in one place on this browser.
+    </p>
+   </div>
+   <section class="product-category">
+    <div class="product-grid" id="wishlist-items">
+    </div>
+    <div class="empty-basket" id="wishlist-empty">
+     <div class="wishlist-heart">
+      ♡
+     </div>
+     <h3>
+      No saved treats yet
+     </h3>
+     <p>
+      Tap the heart on any product to save it here.
+     </p>
+     <a class="btn" href="products.html">
+      Browse treats
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="footer-main">
+    <div>
+     <div class="footer-brand">
+      <img alt="" src="images/logo.png"/>
+      <span class="cute-font">
+       mochimoo
+      </span>
+     </div>
+     <p>
+      Little treats, lots of love. Homemade favourites in Bandung.
+     </p>
+    </div>
+    <div>
+     <h3>
+      EXPLORE
+     </h3>
+     <div class="footer-links">
+      <a href="index.html">
+       Home
+      </a>
+      <a href="about.html">
+       About Us
+      </a>
+      <a href="products.html">
+       All Products
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      YOUR SPACE
+     </h3>
+     <div class="footer-links">
+      <a href="profile.html">
+       Mooer Profile
+      </a>
+      <a href="wishlist.html">
+       Wishlist
+      </a>
+      <a href="basket.html">
+       Basket
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      LET'S TALK
+     </h3>
+     <div class="footer-links">
+      <a href="https://wa.me/628989900049" rel="noopener" target="_blank">
+       WhatsApp
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>
+     &copy; 2026 mochimoo. Made with care in Bandung.
+    </p>
+   </div>
+  </footer>
+  <div class="toast" id="toast" role="status">
+  </div>
+  <script src="site.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#70452f" name="theme-color"/>
+  <title>
+   Products | mochimoo
+  </title>
+  <link href="design.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="header">
+   <a aria-label="Mochimoo Home" class="brand" href="index.html">
+    <img alt="mochimoo logo" src="images/logo.png"/>
+    <span class="cute-font">
+     mochimoo
+    </span>
+   </a>
+   <div class="header-icons">
+    <a aria-label="Mooer profile" class="profile-link" href="profile.html">
+     <img alt="Profile" src="images/profile.png"/>
+    </a>
+    <a aria-label="Open basket" class="basket-link" href="basket.html">
+     <img alt="Basket" src="images/basket.png"/>
+     <span class="cart-count" data-cart-count="">
+      0
+     </span>
+    </a>
+   </div>
+  </header>
+  <nav class="navbar">
+   <a href="index.html">
+    Home
+   </a>
+   <a href="about.html">
+    About Us
+   </a>
+   <div class="dropdown">
+    <a class="dropbtn" href="products.html">
+     Products &dtrif;
+    </a>
+    <div class="dropdown-content">
+     <a href="products.html#cheesticks">
+      Cheesticks
+     </a>
+     <a href="products.html#dubai-chewy">
+      Dubai Chewy
+     </a>
+     <a href="products.html#risoles">
+      Risoles
+     </a>
+     <a href="products.html#desserts">
+      Desserts
+     </a>
+    </div>
+   </div>
+   <a href="description.html">
+    Description
+   </a>
+   <a href="service.html">
+    Service
+   </a>
+  </nav>
+  <section class="products-header">
+   <img alt="Bread illustration" class="bread" src="images/bread.png"/>
+   <span class="eyebrow">
+    Fresh from our little kitchen
+   </span>
+   <h1 class="cute-font">
+    The mochimoo menu
+   </h1>
+   <p>
+    Choose your treat, add it to your basket, and send your order to us through WhatsApp. All product photos use a square frame for a tidy menu.
+   </p>
+   <div class="btn-row" style="justify-content:center">
+    <a class="btn secondary" href="#cheesticks">
+     Cheesticks
+    </a>
+    <a class="btn secondary" href="#dubai-chewy">
+     Dubai Chewy
+    </a>
+    <a class="btn secondary" href="#risoles">
+     Risoles
+    </a>
+    <a class="btn secondary" href="#desserts">
+     Desserts
+    </a>
+   </div>
+  </section>
+  <section aria-label="Search and filter products" class="shop-tools">
+   <label class="shop-search-label" for="product-search">
+    Find your treat
+   </label>
+   <input autocomplete="off" id="product-search" placeholder="Search cookies, cheesticks, risoles..." type="search"/>
+   <div class="shop-filter-row">
+    <button class="filter-chip active" data-filter="all" type="button">
+     All treats
+    </button>
+    <button class="filter-chip" data-filter="cheesticks" type="button">
+     Cheesticks
+    </button>
+    <button class="filter-chip" data-filter="dubai-chewy" type="button">
+     Dubai Chewy
+    </button>
+    <button class="filter-chip" data-filter="risoles" type="button">
+     Risoles
+    </button>
+    <button class="filter-chip" data-filter="desserts" type="button">
+     Desserts
+    </button>
+   </div>
+   <p aria-live="polite" class="muted" id="product-results-count">
+   </p>
+  </section>
+  <section class="product-category" id="cheesticks">
+   <h2 class="category-title cute-font">
+    Cheesticks
+   </h2>
+   <div class="product-grid">
+    <article class="product-detail-card" data-desc="Golden. crispy pastry with a savory cheese filling. A classic snack for sharing." data-id="cheesticks-regular" data-image="images/cheesticks-regular.png" data-name="Cheesticks Regular" data-price="75000" data-unit="pack">
+     <div class="product-image-frame">
+      <img alt="Cheesticks Regular" loading="lazy" src="images/cheesticks-regular.png"/>
+     </div>
+     <span class="badge-label">
+      BESTSELLER
+     </span>
+     <p class="product-price">
+      Rp 75.000
+     </p>
+     <h3 class="product-card-title">
+      Cheesticks Regular
+     </h3>
+     <p class="product-desc">
+      Golden. crispy pastry with a savory cheese filling. A classic snack for sharing.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+    <article class="product-detail-card" data-desc="A smaller pack when you want to try our signature crunch." data-id="cheesticks-tester" data-image="images/cheesticks-tester.png" data-name="Cheesticks Tester" data-price="25000" data-unit="pack">
+     <div class="product-image-frame">
+      <img alt="Cheesticks Tester" loading="lazy" src="images/cheesticks-tester.png"/>
+     </div>
+     <p class="product-price">
+      Rp 25.000
+     </p>
+     <h3 class="product-card-title">
+      Cheesticks Tester
+     </h3>
+     <p class="product-desc">
+      A smaller pack when you want to try our signature crunch.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+    <article class="product-detail-card" data-desc="Crunchy cheesticks served with Nutella for a sweet chocolate dip." data-id="cheesticks-nutella" data-image="images/cheesticks-nutella.png" data-name="Cheesticks with Nutella" data-price="125000" data-unit="pack">
+     <div class="product-image-frame">
+      <img alt="Cheesticks with Nutella" loading="lazy" src="images/cheesticks-nutella.png"/>
+     </div>
+     <span class="badge-label">
+      TREAT YOURSELF
+     </span>
+     <p class="product-price">
+      Rp 125.000
+     </p>
+     <h3 class="product-card-title">
+      Cheesticks with Nutella
+     </h3>
+     <p class="product-desc">
+      Crunchy cheesticks served with Nutella for a sweet chocolate dip.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+   </div>
+  </section>
+  <section class="product-category" id="dubai-chewy">
+   <h2 class="category-title cute-font">
+    Dubai Chewy Cookies
+   </h2>
+   <div class="product-grid">
+    <article class="product-detail-card" data-desc="A soft. chewy cookie with chocolate. pistachio cream. and crunchy kataifi." data-id="dubai-chewy-normal" data-image="images/dubai-chewy-cookie.png" data-name="Dubai Chewy Cookie" data-price="37000" data-unit="pcs">
+     <div class="product-image-frame">
+      <img alt="Dubai Chewy Cookie" loading="lazy" src="images/dubai-chewy-cookie.png"/>
+     </div>
+     <span class="badge-label">
+      BEST PICK
+     </span>
+     <p class="product-price">
+      Rp 37.000
+     </p>
+     <h3 class="product-card-title">
+      Dubai Chewy Cookie
+     </h3>
+     <p class="product-desc">
+      A soft. chewy cookie with chocolate. pistachio cream. and crunchy kataifi.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+    <article class="product-detail-card" data-desc="Little bites with the signature chewy texture. perfect for sharing." data-id="dubai-chewy-mini-bites" data-image="images/dubai-chewy-mini-bites.png" data-name="Dubai Chewy Mini Bites" data-price="20000" data-unit="pack">
+     <div class="product-image-frame">
+      <img alt="Dubai Chewy Mini Bites" loading="lazy" src="images/dubai-chewy-mini-bites.png"/>
+     </div>
+     <p class="product-price">
+      Rp 20.000
+     </p>
+     <h3 class="product-card-title">
+      Dubai Chewy Mini Bites
+     </h3>
+     <p class="product-desc">
+      Little bites with the signature chewy texture. perfect for sharing.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+    <article class="product-detail-card" data-desc="A bigger serving of our soft. rich Dubai chewy cookie." data-id="dubai-chewy-jumbo" data-image="images/dubai-chewy-jumbo.png" data-name="Dubai Chewy Jumbo" data-price="50000" data-unit="pcs">
+     <div class="product-image-frame">
+      <img alt="Dubai Chewy Jumbo" loading="lazy" src="images/dubai-chewy-jumbo.png"/>
+     </div>
+     <p class="product-price">
+      Rp 50.000
+     </p>
+     <h3 class="product-card-title">
+      Dubai Chewy Jumbo
+     </h3>
+     <p class="product-desc">
+      A bigger serving of our soft. rich Dubai chewy cookie.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+    <article class="product-detail-card" data-desc="Two chewy cookies bundled together for an extra happy treat." data-id="dubai-chewy-double-pack" data-image="images/dubai-chewy-double-pack.png" data-name="Dubai Chewy Double Pack" data-price="70000" data-unit="pack">
+     <div class="product-image-frame">
+      <img alt="Dubai Chewy Double Pack" loading="lazy" src="images/dubai-chewy-double-pack.png"/>
+     </div>
+     <p class="product-price">
+      Rp 70.000
+     </p>
+     <h3 class="product-card-title">
+      Dubai Chewy Double Pack
+     </h3>
+     <p class="product-desc">
+      Two chewy cookies bundled together for an extra happy treat.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+    <article class="product-detail-card" data-desc="Our extra-large chewy treat for a serious cookie craving." data-id="dubai-chewy-megalodon" data-image="images/dubai-chewy-megalodon.png" data-name="Dubai Chewy Megalodon" data-price="75000" data-unit="pcs">
+     <div class="product-image-frame">
+      <img alt="Dubai Chewy Megalodon" loading="lazy" src="images/dubai-chewy-megalodon.png"/>
+     </div>
+     <span class="badge-label">
+      NEW
+     </span>
+     <p class="product-price">
+      Rp 75.000
+     </p>
+     <h3 class="product-card-title">
+      Dubai Chewy Megalodon
+     </h3>
+     <p class="product-desc">
+      Our extra-large chewy treat for a serious cookie craving.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+   </div>
+  </section>
+  <section class="product-category" id="risoles">
+   <h2 class="category-title cute-font">
+    Risoles
+   </h2>
+   <div class="product-grid">
+    <article class="product-detail-card" data-desc="Crispy golden risoles with a melty mozzarella filling. 5 pieces per pack." data-id="risol-mozzarella" data-image="images/risol-mozzarella.png" data-name="Risol Mozzarella" data-price="30000" data-unit="pack">
+     <div class="product-image-frame">
+      <img alt="Risol Mozzarella" loading="lazy" src="images/risol-mozzarella.png"/>
+     </div>
+     <span class="badge-label">
+      SAVORY PICK
+     </span>
+     <p class="product-price">
+      Rp 30.000
+     </p>
+     <h3 class="product-card-title">
+      Risol Mozzarella
+     </h3>
+     <p class="product-desc">
+      Crispy golden risoles with a melty mozzarella filling. 5 pieces per pack.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+    <article class="product-detail-card" data-desc="Crispy risoles with a rich chocolate filling. 5 pieces per pack." data-id="risol-coklat" data-image="images/risol-coklat.png" data-name="Risol Coklat" data-price="30000" data-unit="pack">
+     <div class="product-image-frame">
+      <img alt="Risol Coklat" loading="lazy" src="images/risol-coklat.png"/>
+     </div>
+     <p class="product-price">
+      Rp 30.000
+     </p>
+     <h3 class="product-card-title">
+      Risol Coklat
+     </h3>
+     <p class="product-desc">
+      Crispy risoles with a rich chocolate filling. 5 pieces per pack.
+     </p>
+     <button class="order-btn add-to-cart" type="button">
+      Add to basket +
+     </button>
+    </article>
+   </div>
+  </section>
+  <section class="product-category seasonal-category" data-category="desserts" id="desserts">
+   <div class="seasonal-heading">
+    <span class="eyebrow">
+     Here for a little while
+    </span>
+    <h2 class="category-title cute-font">
+     Desserts
+    </h2>
+    <p>
+     Our seasonal desserts appear occasionally. Message us to check availability and the current price before ordering.
+    </p>
+   </div>
+   <div class="product-grid seasonal-grid">
+    <article class="product-detail-card seasonal-product" data-desc="A creamy, chilled panna cotta dessert available occasionally. Availability and price may change by batch." data-id="panna-cotta-seasonal" data-image="images/panna-cotta.png" data-name="Panna Cotta (Seasonal)" data-price="12500" data-unit="cup">
+     <div class="product-image-frame">
+      <img alt="Illustration of seasonal panna cotta dessert" loading="lazy" src="images/panna-cotta.png"/>
+     </div>
+     <span class="badge-label">
+      SEASONAL DROP
+     </span>
+     <p class="product-price">
+      Rp12.500
+     </p>
+     <h3 class="product-card-title">
+      Panna Cotta
+     </h3>
+     <p class="product-desc">
+      A creamy, chilled dessert that appears on selected dates. Available on selected batches. Message us to check availability.
+     </p>
+     <a class="order-btn ask-seasonal" href="https://wa.me/628989900049?text=Halo%20Mochimoo%2C%20apakah%20panna%20cotta%20sedang%20tersedia%3F%20Boleh%20info%20harga%20terbarunya%3F" rel="noopener" target="_blank">
+      Ask availability &nearrow;
+     </a>
+    </article>
+    <article class="product-detail-card seasonal-product" data-desc="A playful egg-shaped pudding dessert available occasionally. Availability and price may change by batch." data-id="pudding-telur-ceplok-seasonal" data-image="images/pudding-telur-ceplok.png" data-name="Pudding Telur Ceplok (Seasonal)" data-price="5000" data-unit="cup">
+     <div class="product-image-frame">
+      <img alt="Illustration of pudding shaped like a sunny-side-up egg" loading="lazy" src="images/pudding-telur-ceplok.png"/>
+     </div>
+     <span class="badge-label">
+      SEASONAL DROP
+     </span>
+     <p class="product-price">
+      Rp5.000
+     </p>
+     <h3 class="product-card-title">
+      Pudding Telur Ceplok
+     </h3>
+     <p class="product-desc">
+      A playful pudding with a sunny-side-up egg look. Available on selected batches. Message us to check availability.
+     </p>
+     <a class="order-btn ask-seasonal" href="https://wa.me/628989900049?text=Halo%20Mochimoo%2C%20apakah%20pudding%20telur%20ceplok%20sedang%20tersedia%3F%20Boleh%20info%20harga%20terbarunya%3F" rel="noopener" target="_blank">
+      Ask availability &nearrow;
+     </a>
+    </article>
+   </div>
+  </section>
+  <footer class="site-footer">
+   <div class="footer-main">
+    <div>
+     <div class="footer-brand">
+      <img alt="" src="images/logo.png"/>
+      <span class="cute-font">
+       mochimoo
+      </span>
+     </div>
+     <p>
+      Little treats, lots of love. Homemade favorites for your sweet and savory cravings since 2021.
+     </p>
+     <p style="margin-top:12px">
+      Bandung, West Java
+     </p>
+    </div>
+    <div>
+     <h3>
+      EXPLORE
+     </h3>
+     <div class="footer-links">
+      <a href="index.html">
+       Home
+      </a>
+      <a href="about.html">
+       Our Story
+      </a>
+      <a href="products.html">
+       All Products
+      </a>
+      <a href="description.html">
+       Product Guide
+      </a>
+      <a href="service.html">
+       How to Order
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      SHOP BY CATEGORY
+     </h3>
+     <div class="footer-links">
+      <a href="products.html#dubai-chewy">
+       Dubai Chewy
+      </a>
+      <a href="products.html#cheesticks">
+       Cheesticks
+      </a>
+      <a href="products.html#risoles">
+       Risoles
+      </a>
+      <a href="products.html#desserts">
+       Seasonal Desserts
+      </a>
+      <a href="wishlist.html">
+       Wishlist
+      </a>
+      <a href="basket.html">
+       Your Basket
+      </a>
+     </div>
+    </div>
+    <div>
+     <h3>
+      LET'S TALK
+     </h3>
+     <div class="footer-links">
+      <a href="https://wa.me/628989900049" rel="noopener" target="_blank">
+       WhatsApp: 0898-9900-049
+      </a>
+      <a href="about.html#find-us">
+       Find Our Location
+      </a>
+      <a href="service.html">
+       Order &amp; Payment Info
+      </a>
+     </div>
+     <p style="margin-top:12px">
+      Questions? We are happy to help you choose.
+     </p>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <p>
+     &copy; 2026 mochimoo. Made with care in Bandung.
+    </p>
+    <p>
+     Sweet bites. Happy mooers.
+    </p>
+   </div>
+  </footer>
+  <div class="toast" id="toast" role="status">
+  </div>
+  <script src="site.js">
+  </script>
+ </body>
+</html>
